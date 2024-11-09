@@ -13,7 +13,7 @@ const rl = readLine.createInterface({
 console.log(chalk.green("1. Crear Archivo"));
 console.log(chalk.red("2. Eliminar Archivo"));
 
-rl.question(chalk.grey("Elije tu opcion: "), async (opt) => {
+rl.question(chalk.grey("Elige tu opcion: "), async (opt) => {
   if (opt === "1") {
     rl.question(chalk.gray("Nombre del archivo?: "), async (nam) => {
       const pathText = path.join("procesos", nam);
